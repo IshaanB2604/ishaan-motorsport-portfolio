@@ -1,1 +1,14 @@
+import matplotlib.pyplot as plt
+import numpy as np
 
+laps = np.arange(1, 30)
+lap_time = 90 + laps * 0.08
+
+plt.plot(laps, lap_time)
+plt.xlabel("Lap Number")
+plt.ylabel("Lap Time (s)")
+plt.title("Tyre Degradation Example")
+plt.grid()
+
+plt.savefig("strategy_graph.png")
+plt.show()
